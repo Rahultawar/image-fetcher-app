@@ -1,1 +1,53 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Fetcher App</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid w-90 h-75">
+        <!-- Card  -->
+        <div class="card border border-4 border-primary rounded-4 shadow-lg mt-3"
+            style="min-height: 85vh; max-height: 90vh;">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                <!-- Welcome Message -->
+                <p id="showMessage" class="fs-4 text-secondary">
+                    Welcome to <span class="fw-bold text-primary">Image Fetcher App</span><br>
+                    Simply enter a keyword, and let the magic happen!<br>
+                    <small class="text-muted">Discover beautiful images based on your keyword instantly from
+                        Unsplash.</small>
+                </p>
+            </div>
+        </div>
+        <!-- Card -->
+    </div>
+
+    <div class="container w-100 h-100 d-flex justify-content-center align-items-center mt-2">
+        <div class="d-flex align-items-center">
+
+            <!-- Text Box for taking user input -->
+            <input type="text" name="txtUserInput" class="form-control shadow-lg p-3 mb-1 bg-body rounded-start"
+                placeholder="Enter keyword here..." style="border: 2px solid #444; width: 300px;">
+
+            <!-- Submit Button -->
+            <button class="btn btn-dark shadow-lg p-3 ms-2"
+                style="width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                →
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
