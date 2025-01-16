@@ -1,0 +1,45 @@
+.card {
+    background: linear-gradient(135deg, #ffffff, #f0f8ff);
+    border-color: #007bff !important;
+}
+
+input[name="txtUserInput"] {
+    transition: all 0.3s ease;
+}
+
+input[name="txtUserInput"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+button.btn-dark {
+    transition: all 0.3s ease;
+}
+
+button.btn-dark:hover {
+    background-color: #0056b3 !important;
+    transform: scale(1.1);
+}
+
+#imageResults,
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#imageResults img,
+.image-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
