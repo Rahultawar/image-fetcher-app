@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Fetcher App</title>
-    <!-- Bootstrap CDN -->
+    <!-- Bootstrap CDN for responsive design and pre-styled components -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -31,12 +31,13 @@
 </head>
 
 <body>
+    <!-- Container-->
     <div class="container-fluid w-90 h-75">
-        <!-- Card  -->
+        <!-- Card for main content -->
         <div class="card border border-4 border-primary rounded-4 shadow-lg mt-3"
             style="min-height: 85vh; max-height: 90vh;">
             <div class="card-body">
-                <!-- Welcome Message -->
+                <!-- Welcome Message Section -->
                 <div id="welcomeMessage" class="d-flex justify-content-center align-items-center"
                     style="height: 100vh;">
                     <p id="showMessage" class="fs-4 text-secondary text-center">
@@ -46,22 +47,25 @@
                             Unsplash.</small>
                     </p>
                 </div>
+                <!-- Section for dynamically displaying fetched images -->
                 <div id="imageResults" class="d-flex flex-wrap justify-content-center">
-                    <!-- Dynamically fetched images go here -->
+                    <!-- Dynamically fetched images will be appended here -->
                 </div>
+                <!-- Pagination Controls -->
+                <div id="pagination" class="pagination mt-3 d-flex justify-content-center"></div>
             </div>
         </div>
-        <!-- Card -->
     </div>
 
+    <!-- Input and Submit Section -->
     <div class="container w-100 h-100 d-flex justify-content-center align-items-center mt-2">
         <div class="d-flex align-items-center">
             <form id="imageSearchForm" class="d-flex">
-                <!-- Text Box for taking user input -->
+                <!-- Input field for user to enter the search keyword -->
                 <input type="text" name="txtUserInput" class="form-control shadow-lg p-3 mb-1 bg-body rounded-start"
                     placeholder="Enter keyword here..." style="border: 2px solid #444; width: 300px;">
 
-                <!-- Submit Button -->
+                <!-- Submit Button to trigger the image search -->
                 <button type="submit" class="btn btn-dark shadow-lg p-3 ms-2"
                     style="width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                     →
@@ -69,7 +73,8 @@
             </form>
         </div>
     </div>
-    <!-- JAVASCRIPT -->
+
+    <!-- External JavaScript file -->
     <script src="./js/script.js"></script>
 </body>
 
